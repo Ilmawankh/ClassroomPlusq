@@ -1,0 +1,52 @@
+<Alloy>
+	
+	<Window class="container" layout="vertical">
+		
+		<!-- Main Container for the Forms -->
+		<View id="loginContainer">
+			
+			<!-- Header Image -->
+			<ImageView image="/images/header_logo.png" id="header"/>
+			
+			<!-- Form Body -->
+			<View id="bodyContainer">
+				
+				<!-- Login Form -->
+				<View id="loginView">
+					<Label class="loginLblTxt">Email / Username</Label>
+					<TextField class="loginTxt" id="text_username" onReturn="focusPassword" onFocus="focusStyle" onBlur="blurStyle"/>
+					<Label class="loginLblTxt">Password</Label>
+					<TextField class="loginTxt" id="text_password" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<ImageView id="helpImg" onClick="forgotClick"/>
+						<Label class="loginLbl" id="forgotLbl" onClick="forgotClick">Forgot Password</Label>
+						<View class="button" id="loginBtn" onClick="loginClick">
+							<Label id="loginLbl" class="buttonLabel">Login</Label>
+						</View>		
+					</View>
+					<View class="controlContainer">
+						<Button class="button" id="accountBtn" onClick="createAccountClick">Create Account</Button>
+						<!--<View class="button" id="loginBtn" onClick="createAccountClick">
+							<Label id="loginLbl" class="buttonLabel">Create Account</Label>
+						</View>-->		
+					</View>
+				</View>
+				
+				<!-- Password Reminder Form -->
+				<View id="passworReminderView">
+					<Label class="loginLblTxt">Email</Label>
+					<TextField class="loginTxt" id="emailTxt" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<View class="button" id="emailBtn" onClick="remindClick">
+							<Label id="resetLbl" class="buttonLabel">Reset</Label>
+						</View>	
+						<View class="button" id="cancelBtn" onClick="cancelClick">
+							<Label id="cancelLbl" class="buttonLabel">Cancel</Label>
+						</View>	
+					</View>
+				</View>
+			</View>
+		</View>
+	
+	</Window>
+</Alloy>

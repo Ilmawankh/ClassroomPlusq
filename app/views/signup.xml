@@ -1,0 +1,50 @@
+<Alloy>
+	
+	<Window class="container" layout="vertical">
+		
+		<!-- Main Container for the Forms -->
+		<View id="loginContainer">
+			
+			<!-- Form Body -->
+			<View id="bodyContainer">
+							
+				<!--Create Account Form -->
+				<View id="createAccountView">
+					<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="false" height="100%" width="100%">	
+			            <View id="createAccountView">
+				            <Label class="loginLblTxt">Username</Label>
+							<TextField class="loginTxt" id="username_create"/>
+							<Label class="loginLblTxt">Password</Label>
+							<TextField class="loginTxt" id="password_create"/>
+							<Label class="loginLblTxt">Password Confirmation</Label>
+							<TextField class="loginTxt" id="password_confirm_create"/>
+							<Label class="loginLblTxt">Email</Label>
+							<TextField class="loginTxt" id="email_create"/>
+							<Label class="loginLblTxt">First Name</Label>
+							<TextField class="loginTxt" id="first_name"/>
+							<Label class="loginLblTxt">Last Name</Label>
+							<TextField class="loginTxt" id="last_name"/>
+							<View class="controlContainer">
+								<View class="button" id="emailBtn" onClick="createClick">
+									<Label id="resetLbl" class="buttonLabel">Create Account</Label>
+								</View>	
+								<View class="button" id="cancelBtn" onClick="cancelAccountClick">
+									<Label id="cancelLbl" class="buttonLabel">Cancel</Label>
+								</View>	
+							</View>
+							
+							<!--
+								<Button class="button" id="createBtn" onClick="createClick">Create Account</Button>
+							<View class="button" id="cancelBtn" onClick="cancelAccountClick">
+								<Label id="cancelLbl" class="buttonLabel">Cancel</Label>
+							</View>
+							-->	
+						</View>
+					</ScrollView>
+				</View>
+			</View>
+			
+		</View>
+	
+	</Window>
+</Alloy>

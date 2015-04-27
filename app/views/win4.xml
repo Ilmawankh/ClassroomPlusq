@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" id="myList" layout="vertical">
+		<TableView id="mainThreadTable">
+		</TableView>
+		<Button id="createPostButton" onClick="createPost">Create Post</Button>
+	</Window>
+</Alloy>

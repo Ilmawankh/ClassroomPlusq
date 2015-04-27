@@ -1,0 +1,5 @@
+<Alloy>	
+	<Window class="container" onClick="openScanner">
+		<Label>Tap any where to begin check-in</Label>
+    </Window>
+</Alloy>
